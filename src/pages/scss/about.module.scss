@@ -1,0 +1,192 @@
+@import '../../sass/global.scss';
+
+.box {
+    @include display-flex();
+    padding-top: 5.7rem;
+    margin-bottom: 4.7rem;
+
+    &__content {
+        // width: 80rem;
+        width: calc(100% - 33rem);
+        margin-right: 6rem;
+
+        @media screen and (max-width: 65.625em) {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        // width: calc(100% - 83rem);
+        width: 27rem;
+
+        @media screen and (max-width: 65.625em) {
+            display: none;
+        }
+    }
+}
+
+.mobileNav {
+    display: none;
+    position: fixed;
+    left: 0; right: 0;
+    top: 6.8rem;
+    z-index: 99;
+    // background: #fff;
+    background: rgba($color: #fff, $alpha: .9);
+
+    @media screen and (max-width: 65.625em) {
+        display: block;
+    }
+
+    &__inner {
+        border-top: 1px solid $--border-secondary;
+        @include display-flex();
+    }
+
+    ul {
+        position: relative;
+        max-width: unset;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        border-top: 0;
+        margin-top: -4px !important;
+        // @include createTransition(.3s, ease);
+
+        @include respond(phone) {
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+            border-bottom: 0;
+            border-left: 0 !important;
+            border-right: 0 !important;
+
+            &:first-of-type {
+                @include respond(phone) {
+                    padding-left: 2.4rem;
+                }
+            }
+        }
+    }
+}
+
+.intro {
+    padding-top: 4.7rem;
+    // margin-bottom: 2.1rem;
+
+    h1 {
+        margin: 0;
+    }
+
+    &__desc {
+        max-width: 80rem;
+    }    
+}
+
+.row {
+    padding-bottom: 4.7rem;
+
+    &__header {
+        margin-bottom: 2.1rem;
+    }
+}
+
+.textPicColumn {
+    @include display-flex();
+
+    @media screen and (max-width: 43.75em) {
+        display: block;
+    }
+
+    &__content {
+        width: calc(100% - 30.7rem);
+        margin-right: 3.7rem;
+
+        @media screen and (max-width: 43.75em) {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    &__image {
+        width: 27rem;
+
+        @media screen and (max-width: 43.75em) {
+            margin-top: 2.7rem;
+            width: calc(100% + 4.8rem);
+            margin-left: -2.4rem;
+        }
+    }
+}
+
+.bsDesc {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.singlePic {
+    width: 100%;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+
+    @include respond(phone) {
+        width: calc(100% + 4.8rem);
+        margin-left: -2.4rem;
+    }
+}
+
+.twoPics {
+    // margin-top: 1em;
+    @include display-flex();
+    @include flex-justify-content(space-between);
+
+    @include respond(phone) {
+        display: block;
+        width: calc(100% + 4.8rem);
+        margin-left: -2.4rem;
+    }
+
+    &__item {
+        width: calc(50% - .7rem);
+
+        @include respond(phone) {
+            width: 100%;
+            margin-bottom: .7rem;
+        }
+    }
+}
+
+
+
+.bottomOffer {
+    background: url('../../images/wnetrza/hotel-lampy-ceramiczne-elco-kobalt-czarne.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include respond(phone) {
+        width: calc(100% + 4.8rem);
+        margin-left: -2.4rem;
+    }
+
+    &__overlay {
+        background: rgba($color: #141414, $alpha: .84);
+    }
+
+
+    &__box {
+        padding-top: 10.4rem;
+        padding-bottom: 13.7rem;
+        text-align: center;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+
+        a {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,199 @@
+@import '../../sass/global.scss';
+
+.basket {
+    padding-top: 4.7rem;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 5.4rem;
+    }
+
+    &__container {
+        @include display-flex();
+    }
+
+    &__items {
+        width: calc(100% - 34.7rem);
+        margin-right: 3.7rem;
+    }
+
+    &__summary {
+        width: 31rem;
+    }
+}
+
+.empty {
+    text-align: center;
+
+    h1 {
+        padding-bottom: 0;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 3.7rem;
+        padding-top: 2.1rem;
+        padding-bottom: 2.1rem;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+
+.item {
+    // background: #fafafa;
+    // padding: 1.7rem;
+    box-sizing: border-box;
+    // border: 1px solid $--border-primary;
+    border-bottom: 1px solid $--border-primary;
+    padding-bottom: 2.7rem;
+    margin-bottom: 1.7rem;
+    @include display-flex();
+    @include box-align(center);
+    
+    &__image {
+        width: 12.7rem;
+    }
+
+    &__info {
+        width: calc(100% - 16.1rem);
+        margin-left: 3.4rem;
+        @include display-flex();
+        @include box-align(center);
+        @include flex-justify-content(space-between);
+    }
+
+    &__infoBasic {
+        // width: calc(100% - 10rem);   
+        margin-right: 2.7rem;
+    }
+
+    &__name {
+        margin-bottom: .4rem;
+
+        a {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__singlePrice {
+        margin-bottom: 2.1rem;
+
+        p {
+            font-size: 1.4rem;
+            color: $--secondary-text;
+        }
+    }
+
+    &__remove {
+        margin-top: 2.1rem;
+
+        button {
+            background: transparent;
+            cursor: pointer;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: $--secondary-text;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__pricing {
+        // width: 10rem;
+        p {
+            color: $--secondary-text;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.quantityLabel {
+    margin-bottom: .3rem;
+
+    small {
+        font-size: 1.2rem;
+        color: lighten($color: $--third-text, $amount: 7%);
+        font-weight: 600;
+    }
+}
+
+.quantityPicker {
+    @include display-flex();
+    @include box-align(center);
+    height: 30px;
+    border: 1px solid #e7e7e7;
+    max-width: 11rem;
+
+    &__btn {
+        font-size: 1.4em;
+        padding: 0 .7em;
+        cursor: pointer;
+        color: #cecece;
+    }
+
+    &__amount {
+        width: 4.7em;
+        @include display-flex();
+        @include box-align(center);
+        @include flex-justify-content(center);
+    }
+}
+
+.summary {
+    width: 100%;
+    position: sticky;
+    top: 9.4rem;
+    padding: 3.2rem;
+    box-sizing: border-box;
+    background: #f6f6f6;
+    border-radius: 4px;
+
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 2.4rem;
+        font-weight: 700;
+    }
+
+    &__calcs {
+        border-top: 1px solid darken($color: $--border-primary, $amount: 9%);
+    }
+
+    &__calcsRow, &__total {
+        @include display-flex();
+        @include flex-justify-content(space-between);
+    }
+
+    &__calcsRow {
+        margin-top: 2.1rem;
+
+        p {
+            &:first-of-type {
+                color: $--secondary-text;
+            }
+        }
+    }
+
+    &__total {
+        margin-top: 2.1rem;
+        padding-top: 2.1rem;
+        border-top: 1px solid darken($color: $--border-primary, $amount: 9%);
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin-top: 2.7rem;
+    }
+}

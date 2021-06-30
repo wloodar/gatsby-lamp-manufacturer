@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{GTWX:function(t,c,e){t.exports=e.p+"static/pdw-c83bfe98f0260a6f40eb93fce343dcd6.jpg"},"pU/J":function(t,c,e){"use strict";e.r(c);var n=e("txSG"),i=e("GTWX"),p=e.n(i);c.default=function(){return Object(n.f)("img",{src:p.a,style:{width:"100%",height:"100vh"}})}}}]);
+//# sourceMappingURL=component---src-pages-pdw-js-d45e1aba7e7fb8aa480f.js.map

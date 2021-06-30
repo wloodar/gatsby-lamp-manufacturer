@@ -1,0 +1,47 @@
+@import '../../sass/global.scss';
+
+.list {
+    max-width: 27rem;
+    margin: auto;
+    position: sticky;
+    top: 30%;
+    border-top: 1px solid darken($color: $--border-primary, $amount: 5%);
+}
+
+.item {
+    padding: 2.1rem 1.7rem;
+    border-bottom: 1px solid darken($color: $--border-primary, $amount: 5%);
+    border-top: 1px solid transparent;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-top: -1px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    @include createTransition(.3s, ease);
+
+    @media screen and (max-width: 65.625em) {
+        border-bottom: 2px solid transparent;
+        -webkit-transition: unset;
+        -moz-transition: unset;
+        -o-transition: unset;
+        transition: unset;
+    }
+
+    &__active {
+        border: 1px solid #141414 !important;
+
+        @media screen and (max-width: 65.625em) {
+            border-top: 0 !important;
+            border-bottom: 2px solid #141414 !important;
+        }
+    }
+}
+
+.backTo {
+    // border: 1px solid #141414;
+    // color: #141414 !important;
+    // text-align: center;
+    // padding: 1.4rem 1.2rem;
+    // font-weight: 600;
+    // line-height: 1.7 !important;
+}
