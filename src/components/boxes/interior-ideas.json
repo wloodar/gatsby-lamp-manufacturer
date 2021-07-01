@@ -1,0 +1,35 @@
+[
+    {
+        "image_name": "hotel-bonerowski-z-lampami-ceramicznymi-elco-1.jpg",
+        "image_caption": "Hotel Bonerowski",
+        "multiple": true,
+        "products": [
+            { 
+                "title": "Lampa Ceramiczna Podłogowa ELCO Mały Andrzej 4001"
+            },
+            {
+                "title": "Lampa Ceramiczna Stołowa ELCO Policjant 3003"
+            }
+        ]
+    },
+    {
+        "image_name": "palac-lampa-ceramiczna-elco-szyszka.jpg",
+        "image_caption": "Pałac",
+        "multiple": true,
+        "products": [
+            {
+                "title": "Lampa Ceramiczna Stołowa ELCO Szyszka"
+            }
+        ]
+    },
+    {
+        "image_name": "hotel-bonerowski-lampy-ceramiczne-4000-elco.jpg",
+        "image_caption": "Hotel Bonerowski",
+        "multiple": false,
+        "products": [
+            {
+                "title": "Lampa Ceramiczna Stołowa ELCO 4000"
+            }
+        ]
+    }
+]
