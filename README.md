@@ -1,6 +1,6 @@
 # Gatbsy Website - ELCO Lampy Ceramiczne
 
-This repo is my website realization for Polish classical lamps manufacturer. 
+This repo is code of my website realization for Polish classical lamps manufacturer. This was supposed to be clean and not too sophisticated website with details about the manufacturer and the work being done by him.
 
 ## Working website 
 
