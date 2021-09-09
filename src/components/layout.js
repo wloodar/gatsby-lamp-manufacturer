@@ -13,6 +13,8 @@ import './layout.css';
 import InstagramIcon from '../images/icons/instagram.inline.svg';
 import FacebookIcon from '../images/icons/facebook.inline.svg';
 
+import WlodevLogo from '../images/wlodev-black-transparent.png';
+
 const Layout = ({ children }) => {
   const {
     site: {
@@ -75,6 +77,13 @@ const Layout = ({ children }) => {
                     </div>
                     <small>&copy; 2021 ELCO <span itemProp="url">lampyceramiczne.pl</span></small>
                 </div>
+
+                <div className={s.attribution}>
+                    <a href="https://wlodev.com/">
+                        <span>Developed by</span>
+                        <img src={WlodevLogo} alt="Wlodev fullstack developer" />
+                    </a>
+                </div> 
             </div>
         </footer>
       </div>
